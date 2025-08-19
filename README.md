@@ -31,7 +31,7 @@ A modern, responsive personal portfolio built with **React + Tailwind CSS** to s
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/kashishgupta2402/portfolio.git
 cd portfolio
 ```
 
