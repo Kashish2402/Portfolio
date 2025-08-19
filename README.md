@@ -23,7 +23,7 @@ A modern, responsive personal portfolio built with **React + Tailwind CSS** to s
 - **Frontend:** React, Vite  
 - **Styling:** Tailwind CSS, Lucide Icons  
 - **Animations:** Framer Motion, ScrollReveal  
-- **Deployment:** Vercel / Netlify  
+- **Deployment:** Vercel
 
 ---
 
