@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { words } from "../../Constants";
 import { ArrowDown, DownloadIcon, ExternalLinkIcon } from "lucide-react";
 import { motion } from "motion/react";
+import { useTheme } from "../Context/ThemeContext";
 
 function Header() {
+  const { theme } = useTheme();
   const viewProject = () => {
     const projectSection = document.querySelector("#projects");
     console.log(projectSection);
@@ -16,9 +18,14 @@ function Header() {
       id="header"
       className="min-h-[100%] w-full flex items-center justify-center relative"
     >
-      <button
+      <motion.button
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
         aria-label="Down Arrrow"
-        className="absolute p-2 bottom-3 cursor-pointer arrow rounded-full outline outline-purple-600 dark:outline-[#554bcd]"
+        className={`absolute p-2 bottom-3 cursor-pointer  rounded-full outline outline-purple-600 dark:outline-[#554bcd] ${
+          theme === "dark" ? "dark-arrow" : "arrow"
+        }`}
         onClick={() =>
           document
             .querySelector("#about")
@@ -26,7 +33,7 @@ function Header() {
         }
       >
         <ArrowDown size={50} />
-      </button>
+      </motion.button>
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -105,12 +112,14 @@ function Header() {
               transition={{ delay: 1.4, duration: 0.5 }}
               className="w-full tracking-normal mx-auto mt-5 flex flex-col md:flex-row items-center gap-8"
             >
-              <button
+              <a
+                href="/Kashish Gupta-Resume.pdf"
+                download="Kashish-Gupta-Resume.pdf"
                 aria-label="download-resume"
                 className="flex w-full md:w-1/2 gap-2 items-center justify-center font-bold cursor-pointer text-base bg-purple-600 py-3 px-5 rounded-xl text-white dark:bg-[rgb(85,75,205)] border-2 border-transparent transition-colors duration-300 hover:bg-transparent hover:text-purple-600 dark:hover:text-[rgb(85,75,205)] hover:border-purple-600 dark:hover:border-[rgb(85,75,205)] "
               >
                 Download Resume <DownloadIcon size={20} />
-              </button>
+              </a>
 
               <button
                 aria-label="projects"
