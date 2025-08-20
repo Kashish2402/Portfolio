@@ -23,7 +23,7 @@ function Header() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
         aria-label="Down Arrrow"
-        className={`absolute p-2 bottom-3 cursor-pointer  rounded-full outline outline-purple-600 dark:outline-[#554bcd] ${
+        className={`hidden md:block absolute p-2 bottom-20 lg:bottom-3 cursor-pointer  rounded-full outline outline-purple-600 dark:outline-[#554bcd] ${
           theme === "dark" ? "dark-arrow" : "arrow"
         }`}
         onClick={() =>

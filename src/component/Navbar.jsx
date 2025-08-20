@@ -37,7 +37,7 @@ function Navbar() {
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, delay: 0.3 }}
-      className="w-screen lg:w-[80px] lg:h-screen lg:py-10 lg:border-r lg:border-gray-500/50 rounded-3xl backdrop-blur-[40px] overflow-hidden z-100"
+      className="fixed bottom-0 left-0 w-full h-[70px] lg:w-[80px] lg:h-screen lg:py-10 lg:border-r lg:border-gray-500/50 rounded-3xl backdrop-blur-[40px] z-100"
       role="navigation"
     >
       <div className="w-full h-full flex flex-col items-center justify-between">

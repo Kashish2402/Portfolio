@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 function Footer() {
   return (
     <section
-      className="flex items-center justify-center border-t border-gray-800/80"
+      className="flex items-center justify-center border-t border-gray-800/80 pb-20"
       id="contact"
     >
       <motion.div
