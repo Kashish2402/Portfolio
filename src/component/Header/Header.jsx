@@ -110,7 +110,7 @@ function Header() {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.4, duration: 0.5 }}
-              className="w-full tracking-normal mx-auto mt-5 flex flex-col md:flex-row items-center gap-8"
+              className="w-full justify-center tracking-normal mx-auto mt-5 flex flex-col md:flex-row items-center gap-8"
             >
           {   /* <a
                 href="/Kashish Gupta-Resume.pdf"
