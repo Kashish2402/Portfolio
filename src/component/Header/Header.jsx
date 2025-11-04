@@ -123,7 +123,7 @@ function Header() {
 
               <button
                 aria-label="projects"
-                className="flex w-full md:w-1/2 gap-2 text-base items-center justify-center font-semibold cursor-pointer bg-purple-600 py-3 dark:bg-[rgb(85,75,205)] text-white transition-colors border-2 border-transparent duration-300 px-5 rounded-xl hover:bg-transparent hover:text-purple-600 dark:hover:text-[rgb(85,75,205)] hover:border-purple-600 dark:hover:border-[rgb(85,75,205)]"
+                className="flex w-full gap-2 text-base items-center justify-center font-semibold cursor-pointer bg-purple-600 py-3 dark:bg-[rgb(85,75,205)] text-white transition-colors border-2 border-transparent duration-300 px-5 rounded-xl hover:bg-transparent hover:text-purple-600 dark:hover:text-[rgb(85,75,205)] hover:border-purple-600 dark:hover:border-[rgb(85,75,205)]"
                 onClick={viewProject}
               >
                 View My Work
