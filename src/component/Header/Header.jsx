@@ -112,21 +112,21 @@ function Header() {
               transition={{ delay: 1.4, duration: 0.5 }}
               className="w-full tracking-normal mx-auto mt-5 flex flex-col md:flex-row items-center gap-8"
             >
-              <a
+             /* <a
                 href="/Kashish Gupta-Resume.pdf"
                 download="Kashish-Gupta-Resume.pdf"
                 aria-label="download-resume"
                 className="flex w-full md:w-1/2 gap-2 items-center justify-center font-bold cursor-pointer text-base bg-purple-600 py-3 px-5 rounded-xl text-white dark:bg-[rgb(85,75,205)] border-2 border-transparent transition-colors duration-300 hover:bg-transparent hover:text-purple-600 dark:hover:text-[rgb(85,75,205)] hover:border-purple-600 dark:hover:border-[rgb(85,75,205)] "
               >
                 Download Resume <DownloadIcon size={20} />
-              </a>
+              </a>*/
 
               <button
                 aria-label="projects"
                 className="flex w-full md:w-1/2 gap-2 text-base items-center justify-center font-semibold cursor-pointer bg-purple-600 py-3 dark:bg-[rgb(85,75,205)] text-white transition-colors border-2 border-transparent duration-300 px-5 rounded-xl hover:bg-transparent hover:text-purple-600 dark:hover:text-[rgb(85,75,205)] hover:border-purple-600 dark:hover:border-[rgb(85,75,205)]"
                 onClick={viewProject}
               >
-                View My Projects
+                View My Work
               </button>
             </motion.div>
           </div>
